@@ -1,0 +1,28 @@
+<h1 class="my-auto mt-5 mb-3" style="font-weight: 700">Product Detail</h1>
+
+<mat-card class="mt-4 p-4">
+  <img
+    mat-card-image
+    [src]="product.imagePath"
+    alt="{{ product.name }}"
+    style="max-height: 400px; object-fit: contain"
+  />
+  <mat-card-header>
+    <mat-card-title class="fs-2 mb-2">{{ product.name }}</mat-card-title>
+    <mat-card-subtitle class="fs-5">₱{{ product.price }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="fs-5 my-4">
+    <p>{{ product.description }}</p>
+  </mat-card-content>
+
+  <div class="d-flex justify-content-end">
+    <mat-card-actions>
+      <button mat-fab color="accent" (click)="onEditMode()">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-fab color="warn" class="ms-4" (click)="openDialog()">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-card-actions>
+  </div>
+</mat-card>

@@ -1,0 +1,8 @@
+.icon-display:hover {
+  transform: scale(1.5);
+}
+
+.list-group {
+  max-height: 600px;
+  overflow-y: scroll;
+}

@@ -1,0 +1,24 @@
+<a
+  class="list-group-item clearfix"
+  [routerLink]="[index]"
+  routerLinkActive="current-active"
+>
+  <mat-card class="product-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{ product.name }}</mat-card-title>
+        <mat-card-subtitle>₱{{ product.price }}</mat-card-subtitle>
+        <img
+          mat-card-md-image
+          class="mb-3"
+          style="object-fit: cover"
+          src="{{ product.imagePath }}"
+          alt="{{ product.name }}"
+        />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-footer *ngIf="isActiveLink()">
+      <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+</a>

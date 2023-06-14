@@ -2,3 +2,9 @@
   box-shadow: 0 4px 4px -1px rgba(103, 58, 183, 0.3),
     0 1px 1px 0 rgba(103, 58, 183, 0.3), 0 1px 3px 0 rgba(103, 58, 183, 0.3);
 }
+
+@media screen and (max-width: 992px) {
+  .product-detail-card {
+    width: 200px;
+  }
+}

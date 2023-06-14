@@ -1,27 +1,36 @@
-# ProjectManagerAngular
+# Project Manager - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
+A simple angular project where it displays a list of products and access the detailed information of the product selected. Additionally, users can add, edit, and delete a product.
 
-## Development server
+![Sample Image](sample.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Technologies Used
 
-## Code scaffolding
+- Node.js
+- Angular
+- Angular Material
+- Bootstrap
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development Setup
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js
+- Angular CLI
 
-## Running unit tests
+### Setup Project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository and navigate to the project directory
+2. Install dependencies
 
-## Running end-to-end tests
+```
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Run the project
 
-## Further help
+```
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Navigate to `http://localhost:4200/`
