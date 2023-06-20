@@ -2,6 +2,8 @@
 
 A simple angular project where it displays a list of products and access the detailed information of the product selected. Additionally, users can add, edit, and delete a product.
 
+Live Demo: https://angular-project-manager.vercel.app/
+
 ![Sample Image](sample.png)
 
 ## Technologies Used
