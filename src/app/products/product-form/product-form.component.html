@@ -15,15 +15,35 @@
   >
     <mat-form-field style="width: 100%">
       <mat-label>Product Name</mat-label>
-      <input matInput name="name" [(ngModel)]="name" required />
+      <input
+        matInput
+        name="name"
+        [(ngModel)]="name"
+        required
+        pattern=".*\S+.*"
+      />
     </mat-form-field>
     <mat-form-field style="width: 100%">
       <mat-label>Product Price</mat-label>
-      <input matInput type="number" name="price" [(ngModel)]="price" required />
+      <input
+        matInput
+        type="number"
+        name="price"
+        [(ngModel)]="price"
+        required
+        min="1"
+        max="99999"
+      />
     </mat-form-field>
     <mat-form-field style="width: 100%">
       <mat-label>Product Image URL</mat-label>
-      <input matInput name="imagePath" [(ngModel)]="imagePath" required />
+      <input
+        matInput
+        name="imagePath"
+        [(ngModel)]="imagePath"
+        required
+        pattern=".*\S+.*"
+      />
     </mat-form-field>
 
     <img
@@ -43,6 +63,7 @@
         name="description"
         [(ngModel)]="description"
         required
+        pattern=".*\S+.*"
       ></textarea>
     </mat-form-field>
 
